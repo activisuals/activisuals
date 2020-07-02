@@ -1,0 +1,17 @@
+{
+    "folders": [
+		{
+			"name": "JAVASCRIPT",
+			"path": "../JAVASCRIPT"
+		},
+		{
+			"name": "WEBSITE",
+			"path": "../WEBSITE"
+		},
+		{
+			"name": "activisualsWebsite",
+			"path": "."
+		}
+	],
+    "settings": {}
+}

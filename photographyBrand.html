@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<!--TITLE OF WEBSITE-->
+ <title>ACTIVISUALS</title>
+
+<!--NAVIGATION BAR-->
+<div class="topNav">
+<!--MAKE IT BOLD-->
+<strong>
+
+  <a class="active" href="index.html">HOME</a>
+
+  <a href="photographyBrand.html">BRAND PHOTOGRAPHY</a>
+
+  <a href="photographyLive.html">LIVE PHOTOGRAPHY</a>
+
+  <a href="photographyPort.html">PORTRAIT PHOTOGRAPHY</a>
+
+  <a href="graphicDesign.html">GRAPHIC DESIGN</a>
+
+  <a href="video.html">VIDEO</a>
+
+  <a href="contact.html">CONTACT</a>
+  </strong>
+</div>
+
+<!--HEADER IMAGE-->
+<head>
+<img src="images/header.png" alt="header" id="header">
+<section>
+   <h1 class="textForeground"><i>STAY ACTIVE</i></h1>
+</section>
+</head>
+
+<!--BODY-->
+<body>
+<section>
+<img name="slide"width="800" height="600"/>
+<section>
+<b>BRAND COLLABERATIONS</b>
+<!--RUN JAVA SCRIPT-->
+<script> var i = 0; // START
+var images = [];	// ARRAY IMAGES
+var time = 2000;	// TIME
+	 
+// IMAGES FOR BRAND WORK
+images[0] = "images/brand1.png";
+images[1] = "images/brand2.png";
+images[2] = "images/brand3.png";
+images[3] = "images/brand4.png";
+images[4] = "images/brand5.png";
+images[5] = "images/brand6.png";
+images[6] = "images/brand7.png";
+images[7] = "images/brand8.png";
+images[8] = "images/brand9.png";
+images[9] = "images/brand10.png";
+images[10] = "images/brand11.png";
+images[11] = "images/brand12.png";
+images[12] = "images/brand13.png";
+images[13] = "images/brand14.png";
+images[14] = "images/brand15.png";
+images[15] = "images/brand16.png";
+images[16] = "images/brand17.png";
+
+//IMAGE SLIDE
+function changeImg(){
+	document.slide.src = images[i];
+
+	// CHECK INDEX UNDER MAX
+	if(i < images.length - 1){
+	  // ADD 1
+	  i++; 
+	} else { 
+		// OR RESET BACK TO ZERO
+		i = 0;
+	}
+
+	// FUNCTION RUN TIME
+	setTimeout("changeImg()", time);
+}
+
+// RUN ON PAGE LOAD
+window.onload=changeImg; 
+</script>
+</section>
+
+

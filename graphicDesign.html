@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<!--TITLE OF WEBSITE-->
+ <title>ACTIVISUALS</title>
+
+<!--NAVIGATION BAR-->
+<div class="topNav">
+<!--MAKE IT BOLD-->
+<strong>
+
+  <a class="active" href="index.html">HOME</a>
+
+  <a href="photographyBrand.html">BRAND PHOTOGRAPHY</a>
+
+  <a href="photographyLive.html">LIVE PHOTOGRAPHY</a>
+
+  <a href="photographyPort.html">PORTRAIT PHOTOGRAPHY</a>
+
+  <a href="graphicDesign.html">GRAPHIC DESIGN</a>
+
+  <a href="video.html">VIDEO</a>
+
+  <a href="contact.html">CONTACT</a>
+  </strong>
+</div>
+
+<!--HEADER IMAGE-->
+<head>
+<img src="images/header.png" alt="header" id="header">
+<section>
+   <h1 class="textForeground"><i>STAY ACTIVE</i></h1>
+</section>
+</head>
+
+<!--BODY-->
+<body>
+<section>
+<img name="slide"width="800" height="600"/>
+<section>
+<b>GRAPHIC DESIGN WORK</b>
+
+<!--RUN JAVA SCRIPT-->
+<script> var i = 0; // START
+var images = [];	// ARRAY IMAGES
+var time = 2000;	// TIME
+images[0] = "images/slide1.png";
+images[1] = "images/slide2.png";
+images[2] = "images/slide3.png";
+images[3] = "images/slide4.png";
+images[4] = "images/slide5.png";
+images[5] = "images/slide6.png";
+images[6] = "images/slide7.png";
+images[7] = "images/slide8.png";
+images[8] = "images/slide9.png";
+images[9] = "images/slide10.png";
+images[10] = "images/slide11.png";
+
+//IMAGE SLIDE
+function changeImg(){
+	document.slide.src = images[i];
+
+	// CHECK INDEX UNDER MAX
+	if(i < images.length - 1){
+	  // ADD 1
+	  i++; 
+	} else { 
+		// OR RESET BACK TO ZERO
+		i = 0;
+	}
+
+	// FUNCTION RUN TIME
+	setTimeout("changeImg()", time);
+}
+
+// RUN ON PAGE LOAD
+window.onload=changeImg; 
+</script>
+</section>

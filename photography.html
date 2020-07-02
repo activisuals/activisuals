@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<!--Title of website-->
+ <title>ACTIVISUALS</title>
+
+<!--Navigation-->
+<div class="nav">
+
+<strong>
+  <a id="box" href="index.html">HOME</a>
+  <a id="box"href="photographyBrand.html">BRAND PHOTOGRAPHY</a>
+  <a id="box"href="photographyPort.html">PORTRAIT PHOTOGRAPHY</a>
+  <a id="box"href="video.html">VIDEO</a>
+  <a id="box"href="graphicDesign.html">GRAPHIC DESIGN</a>
+  <a id="box"href="contact.html">CONTACT</a>
+  </strong>
+</div>
+
+<head>
+<img src="images/header.png" alt="header" id="header">
+<section>
+   <h1 class="textForeground"><i>STAY ACTIVE</i></h>
+</section>
+</head>
+
+<body>
+
+<section>
+<img name="slide"width="800" height="600"/>
+<section>
+<b>BRAND PHOTOGRAPHY WORK</b>
+<script> var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 2000;	// Time Between Switch
+	 
+// Image List for brand work
+images[0] = "images/brand1.png";
+images[1] = "images/brand2.png";
+images[2] = "images/brand3.png";
+images[3] = "images/brand4.png";
+images[4] = "images/brand5.png";
+images[5] = "images/brand6.png";
+images[6] = "images/brand7.png";
+images[7] = "images/brand8.png";
+images[8] = "images/brand9.png";
+images[9] = "images/brand.png";
+images[10] = "images/brand11.png";
+images[11] = "images/brand12.png";
+images[12] = "images/brand13.png";
+images[13] = "images/brand14.png";
+images[14] = "images/brand15.png";
+images[15] = "images/brand16.png";
+images[16] = "images/brand17.png";
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg; 
+</script>
+</section>
+
+
+
